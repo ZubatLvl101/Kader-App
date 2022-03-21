@@ -8,8 +8,8 @@ db_password = "Duefelsiek1!"
 database = "Kada-App"
 
 def login(e_mail, password):
-    query_select = "SELECT us.id AS ANZAHL FROM [USER] us WHERE us.E_MAIL = %s AND us.PASSWORT = %s"
-    query_update = "UPDATE PROFIL SET LOGIN_STATUS = 1 WHERE USE_ID = %s"
+    query_select = "SELECT us.id_user AS ANZAHL FROM [USER] us WHERE us.E_MAIL = %s AND us.PASSWORT = %s"
+    query_update = "UPDATE PROFIL SET LOGIN_STATUS = 1 WHERE ID_USER = %s"
     con = pymssql.connect(
         server=server, user=db_user, password=db_password, database=database
     )
@@ -26,7 +26,7 @@ def login(e_mail, password):
 
 
 def logout(id):
-    query_update = "UPDATE PROFIL SET LOGIN_STATUS = 0 WHERE USE_ID = %s"
+    query_update = "UPDATE PROFIL SET LOGIN_STATUS = 0 WHERE ID_USER = %s"
     con = pymssql.connect(
         server=server, user=db_user, password=db_password, database=database
     )
@@ -39,8 +39,8 @@ def logout(id):
 
 def create_user(user: User):
     query_mail = "SELECT COUNT(*) FROM [USER] WHERE E_MAIL = %s"
-    query_user = "INSERT INTO [USER] (E_MAIL,PASSWORT,REGISTRIEUNGSDATUM, USERNAME) OUTPUT INSERTED.ID VALUES (%s,%s,%s,%s)"
-    query_profile = "INSERT INTO PROFIL (LOGIN_STATUS, [NAME],use_id) VALUES (0,%s,%s)"
+    query_user = "INSERT INTO [USER] (E_MAIL,PASSWORT,REGISTER_DATE, USERNAME) OUTPUT INSERTED.ID_USER VALUES (%s,%s,%s,%s)"
+    query_profile = "INSERT INTO PROFIL (LOGIN_STATUS, [NAME],ID_USER) VALUES (0,%s,%s)"
     con = pymssql.connect(server=server, user=db_user,
                           password=db_password, database=database)
     cur = con.cursor()
