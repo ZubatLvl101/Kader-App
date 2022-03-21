@@ -1,0 +1,21 @@
+.img {
+    object-fit: cover
+}
+
+.cog{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.cog:hover {
+    color: #999 !important;
+}
+
+.logout {
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.logout:hover {
+    color: #f44 !important;
+}
