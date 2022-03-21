@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpielerBiografie">
+
+    <ImageView
+        android:id="@+id/bildSp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/trikot1" />
+
+    <TextView
+        android:id="@+id/nameSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="172dp"
+        android:text="Name:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bildSp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameFillSp"
+        android:layout_width="228dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="3dp"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bildSp"
+        app:layout_constraintTop_toBottomOf="@+id/nameSp" />
+
+    <TextView
+        android:id="@+id/positionSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="153dp"
+        android:text="Position:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bildSp"
+        app:layout_constraintTop_toBottomOf="@+id/nameFillSp" />
+
+    <TextView
+        android:id="@+id/positionFillSp"
+        android:layout_width="229dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bildSp"
+        app:layout_constraintTop_toBottomOf="@+id/positionSp" />
+
+    <TextView
+        android:id="@+id/beitrittSp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="221dp"
+        android:text="Beitritt des Vereins:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bildSp" />
+
+    <TextView
+        android:id="@+id/beitrittFillSp"
+        android:layout_width="393dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="2dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beitrittSp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Home"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <Button
+            android:id="@+id/einstellungenButtonHome"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="361dp"
+            android:text="Einstellungen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeHome" />
+
+        <Button
+            android:id="@+id/tabelleButtonHome"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="59dp"
+            android:text="Tabelle"
+            app:layout_constraintBottom_toTopOf="@+id/newsButtonHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeHome" />
+
+        <Button
+            android:id="@+id/ergebnisseButtonHome"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="211dp"
+            android:text="Ergebnisse"
+            app:layout_constraintBottom_toTopOf="@+id/einstellungenButtonHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeHome" />
+
+        <Button
+            android:id="@+id/kaderButtonHome"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="61dp"
+            android:text="Kader"
+            app:layout_constraintBottom_toTopOf="@+id/ergebnisseButtonHome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeHome" />
+
+        <Button
+            android:id="@+id/wettenButtonHome"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="361dp"
+            android:layout_marginEnd="59dp"
+            android:text="Wetten"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeHome" />
+
+        <TextView
+            android:id="@+id/homeHome"
+            android:layout_width="102dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="145dp"
+            android:text="Home"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/newsButtonHome"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="211dp"
+            android:layout_marginEnd="59dp"
+            android:text="News"
+            app:layout_constraintBottom_toTopOf="@+id/wettenButtonHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeHome" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

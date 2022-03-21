@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kader">
+
+    <ImageView
+        android:id="@+id/feldKader"
+        android:layout_width="404dp"
+        android:layout_height="919dp"
+        android:layout_marginBottom="660dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rugby_field" />
+
+    <TextView
+        android:id="@+id/kaderKader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Kader"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/nr1Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot1" />
+
+    <ImageView
+        android:id="@+id/nr2Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot2" />
+
+    <ImageView
+        android:id="@+id/nr3Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot3" />
+
+    <ImageView
+        android:id="@+id/nr4Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot4" />
+
+    <ImageView
+        android:id="@+id/nr5Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.618"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot5" />
+
+    <ImageView
+        android:id="@+id/nr6Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot6" />
+
+    <ImageView
+        android:id="@+id/nr7Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="232dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot7" />
+
+    <ImageView
+        android:id="@+id/nr8Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="316dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot8" />
+
+    <ImageView
+        android:id="@+id/nr9Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="352dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot9" />
+
+    <ImageView
+        android:id="@+id/nr10Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot10" />
+
+    <ImageView
+        android:id="@+id/nr11Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="520dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot11" />
+
+    <ImageView
+        android:id="@+id/nr12Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="436dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot12" />
+
+    <ImageView
+        android:id="@+id/nr13Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="484dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot13" />
+
+    <ImageView
+        android:id="@+id/nr15Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="520dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot15" />
+
+    <ImageView
+        android:id="@+id/nr14Kader"
+        android:layout_width="65dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="520dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot14" />
+
+    <ImageView
+        android:id="@+id/nr16Kader"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot16" />
+
+    <ImageView
+        android:id="@+id/nr17Kader"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot17" />
+
+    <ImageView
+        android:id="@+id/nr18Kader"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot18" />
+
+    <ImageView
+        android:id="@+id/nr19Kader"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot19" />
+
+    <ImageView
+        android:id="@+id/nr20Kader"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot20" />
+
+    <ImageView
+        android:id="@+id/nr21Kader"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot21" />
+
+    <ImageView
+        android:id="@+id/nr22Kader"
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="612dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.955"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaderKader"
+        app:srcCompat="@drawable/trikot22" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
