@@ -1,0 +1,17 @@
+.text{
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-style: italic;
+    color: rgb(33, 37, 41);
+}
+
+.title{
+    margin-top: 20px;
+    color: rgb(33, 37, 41);
+}
+
+.img{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}

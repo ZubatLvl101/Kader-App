@@ -1,0 +1,33 @@
+.text{
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-style: italic;
+    color: rgb(33, 37, 41);
+}
+
+.title{
+    margin-top: 20px;
+    color: rgb(33, 37, 41);
+}
+
+.img{
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.hei{
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/rugby_field.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}

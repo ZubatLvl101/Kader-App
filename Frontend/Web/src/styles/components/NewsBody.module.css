@@ -1,0 +1,62 @@
+.ticket {
+    cursor: pointer;
+    margin: 3px;
+}
+
+.text {
+    margin-left: 5px;
+    color: #96989A;
+}
+
+.bg {
+    background: rgb(33, 37, 41);
+    border-bottom: 2px solid lightgray;
+}
+
+.ml{
+    margin-left: 5px;
+}
+
+.mb{
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 300px;
+    min-width: 300px;
+    height: 150px;
+    object-fit: cover
+}
+
+.img {
+    width: 300px;
+    min-width: 300px;
+    height: 150px;
+    object-fit: cover
+}
+
+.info {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgb(33, 37, 41);
+}
+
+.description {
+    color: #96989A;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+            line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    line-height: 2.5ex;
+    margin: 0;
+}
+
+.bg {
+    background: rgb(33, 37, 41) !important;
+}
+
+.link:hover{
+    color: #999 !important;
+}
