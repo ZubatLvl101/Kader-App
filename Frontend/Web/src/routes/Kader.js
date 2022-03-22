@@ -1,8 +1,10 @@
 import Navbar from '../components/Navbar';
 import { Container } from 'react-bootstrap';
-//import store from '../store';
+import store from '../store';
 import { Navigate } from 'react-router-dom';
-import styles from '../styles/routes/Home.module.css';
+import styles from '../styles/routes/Kader.module.css';
+import { spielerDaten } from '../data/data';
+
 
 
 const Kader = () => {
@@ -12,10 +14,10 @@ const Kader = () => {
     }*/
 
     return (
-        <div className='mainContainer'>
+        <div className={`mainContainer ${styles.hei}`}>
             <Navbar />
-            <Container className='mt-4'>
-                <div>
+            <Container className= {`mt-4 ${styles.hei}`}>
+                <div className={styles.wrapper}>
                     <div className={styles.text}>
                         <h3 className={styles.title}>Kader</h3>
                         Hello World

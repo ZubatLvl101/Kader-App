@@ -4,7 +4,7 @@ import { Table } from 'react-bootstrap';
 //import store from '../store';
 import { Navigate } from 'react-router-dom';
 import styles from '../styles/routes/Home.module.css';
-
+import { tablleDaten } from '../data/data';
 
 const Tabelle = () => {
 
@@ -29,11 +29,13 @@ const Tabelle = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Test</td>
-                                        <td>Test</td>
-                                    </tr>
+                                    {tablleDaten.map((element,idx) => (
+                                        <tr key = {idx}>
+                                            <td >{element.position}</td>
+                                            <td >{element.name}</td>
+                                            <td >{element.punkte}</td>
+                                        </tr>
+                                    ))}
                                 </tbody>
                             </Table>
                         </div>

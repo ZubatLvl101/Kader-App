@@ -1,0 +1,22 @@
+.inputWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftInput {
+    margin-right: 10px;
+}
+
+.test {
+    margin-right: 10px;
+    width: 40%;
+}
+
+.test2 {
+    margin-right: 10px;
+    width: 40%;
+}
+
+.test3 {
+    width: 20%;
+}
