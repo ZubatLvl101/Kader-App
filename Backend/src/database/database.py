@@ -1,5 +1,6 @@
 from datetime import datetime
 import pymssql
+from data.news import News
 from data.user import User
 
 server = "192.168.2.197"
@@ -58,3 +59,17 @@ def create_user(user: User):
     cur.close()
     con.close()
     return True
+
+def get_news_by_verein_id(id):
+    query_select = """select NEWS.ID_PROFIL,NEWS.TEXT,NEWS.TIMESTAMP from NEWS where NEWS.ID_VEREIN = %s """
+    con = pymssql.connect(
+        server=server, user=db_user, password=db_password, database=database
+    )
+    cur = con.cursor()
+    cur.execute(query_select,(id,))
+    res = []
+    for news in cur:
+        res.append(News(*news))
+    cur.close()
+    con.close()
+    return res

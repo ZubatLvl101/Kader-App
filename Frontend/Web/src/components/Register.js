@@ -1,23 +1,16 @@
 import { Form, Button, Alert } from 'react-bootstrap';
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { changeUser } from '../actions';
-import store from '../store';
-import styles from '../styles/components/Register.module.css';
-import { formatDate } from '../util/Format';
 
 const Register = () => {
     const [values, setValues] = useState({
-        vorname: '', nachname: '', username: '', email: '', passwort: '', geburtsdatum: ''
+        username: '', email: '', passwort: ''
     });
 
     const [errors, setErrors] = useState({
-        vorname: false, nachname: false, username: false, email: false, passwort: false, geburtsdatum: false, dbError: false
+        username: false, email: false, passwort: false, dbError: false
     });
 
     const [success, setSuccess] = useState(false);
-
-    const navigate = useNavigate();
 
     const register = async (e) => {
         e.preventDefault();
@@ -37,12 +30,9 @@ const Register = () => {
         }
     
         let user = {
-            vorname: e.target.firstname.value,
-            nachname: e.target.lastname.value,
             username: e.target.username.value,
             email: e.target.email.value,
             passwort: e.target.password.value,
-            geburtsdatum: formatDate(e.target.birthdate.value)
         }
 
         const res = await registerUser(user);
@@ -58,7 +48,7 @@ const Register = () => {
     };
 
     const registerUser = async (user) => {
-        const res = await fetch('http://localhost:4000/api/register', {
+        const res = await fetch('http://127.0.0.1:5000/register', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -79,18 +69,6 @@ const Register = () => {
                 Sie haben sich erfolgreich registriert!
             </Alert>}
 
-            <div className={styles.inputWrapper}>
-                <Form.Group className={`mb-3 ${styles.leftInput}`} controlId="formRegisterFirstname">
-                    <Form.Control type="text" placeholder="First name" name="firstname" value={values.vorname} onChange={e => setValues({...values, vorname: e.target.value})} />
-                    {errors.vorname && <small className="form-text text-warning"> Bitte geben Sie Ihren Vornamen ein!</small>}
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formRegisterLastname">
-                    <Form.Control type="text" placeholder="Last name" name="lastname" value={values.nachname} onChange={e => setValues({...values, nachname: e.target.value})}/>
-                    {errors.nachname && <small className="form-text text-warning"> Bitte geben Sie Ihren Nachnamen!</small>}
-                </Form.Group>
-            </div>
-
             <Form.Group className="mb-3" controlId="formRegisterUsername">
                 <Form.Control type="text" placeholder="Username" name="username" value={values.username} onChange={e => setValues({...values, username: e.target.value})}/>
                 {errors.username && <small class="form-text text-warning"> Bitte geben Sie einen Benutzernamen ein!</small>}
@@ -104,11 +82,6 @@ const Register = () => {
             <Form.Group className="mb-3" controlId="formRegisterPassword">
                 <Form.Control type="password" placeholder="Password" name="password" value={values.passwort} onChange={e => setValues({...values, passwort: e.target.value})}/>
                 {errors.passwort && <small class="form-text text-warning"> Ihr Passwort muss mindestens aus 8 Zeichen bestehen!</small>}
-            </Form.Group>
-
-            <Form.Group className={`mb-3 ${styles.leftInput}`} controlId="formRegisterBirthdate">
-                <Form.Control type="date" placeholder="MM/DD/YYYY" name="birthdate" value={values.geburtsdatum} onChange={e => setValues({...values, geburtsdatum: e.target.value})}/>
-                {errors.geburtsdatum && <small class="form-text text-warning"> Sie müssen 18 Jahre alt sein!</small>}
             </Form.Group>
 
             <Button variant="primary" type="submit" >

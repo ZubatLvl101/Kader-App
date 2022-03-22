@@ -1,8 +1,9 @@
 import Navbar from '../components/Navbar';
 import { Container } from 'react-bootstrap';
-//import store from '../store';
+import store from '../store';
 import { Navigate } from 'react-router-dom';
 import styles from '../styles/routes/Home.module.css';
+import NewsBody from '../components/NewsBody';
 
 
 const Home = () => {
@@ -15,12 +16,9 @@ const Home = () => {
         <div className='mainContainer'>
             <Navbar />
             <Container className='mt-4'>
-                <div>
-                    <div className={styles.text}>
-                        <h3 className={styles.title}>Neuigkeiten</h3>
-                        Hello World
-                    </div>
-                </div>                
+                <div className={`d-flex flex-column align-items-center `}>
+                    <NewsBody />
+                </div>
             </Container>
         </div>
     );
